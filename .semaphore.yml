@@ -11,8 +11,8 @@ blocks:
             - echo "Hello World!"
             - echo $SECRET_TWO
       secrets:
-        - name: mySecrets
+        - name: WHATmySecrets
           env_var_names: []
-        - name: more-mihalis-secrets
+        - name: WHATmore-mihalis-secrets
           env_var_names: []
 
