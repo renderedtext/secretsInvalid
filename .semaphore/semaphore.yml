@@ -1,4 +1,4 @@
-version: "v1.0"
+version: v1.0
 name: Basic YAML configuration file example.
 semaphore_image: standard
 blocks:
@@ -10,9 +10,8 @@ blocks:
             - echo "Hello World!"
             - echo $SECRET_ONE
             - echo $SECRET_TWO
+
       secrets:
         - name: mySecrets
-          env_var_names: []
         - name: more-mihalis-secrets
-          env_var_names: []
 
