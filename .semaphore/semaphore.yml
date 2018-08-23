@@ -1,6 +1,10 @@
 version: v1.0
-name: Basic YAML configuration file example.
-semaphore_image: standard
+name: Basic YAML configuration file example with secrets
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+
 blocks:
   - build:
       jobs:
