@@ -6,15 +6,18 @@ agent:
     os_image: ubuntu1804
 
 blocks:
-  - build:
+ - name: Inspect Linux environment
+   task:
       jobs:
-        - name: My Semaphore 2.0 job
+        - name: Print Envrinment variable
+          commands:
+            - echo $SEMAPHORE_PIPELINE_ID
+        - name: Working with secrets
           commands:
             - echo $SEMAPHORE_PIPELINE_ID
             - echo "Hello World!"
             - echo $SECRET_ONE
             - echo $SECRET_TWO
-
       secrets:
         - name: mySecrets
         - name: more-mihalis-secrets
